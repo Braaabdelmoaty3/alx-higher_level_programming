@@ -1,10 +1,4 @@
 #!/usr/bin/python3
 
-i = 'a'
-
-while True:
-    print(i, end='')
-    i = chr(ord(i) + 1)
-
-    if i > 'z':
-        break
+for i in range(97,123):
+    print(chr(i),end="")

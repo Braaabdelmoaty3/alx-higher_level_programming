@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    power = [[list(map(lambda x:x**2,row))]for row in matrix]
-    return power
+    return list(map(lambda submat:list(map(lambda x:x**2,submat)), matrix))
 
 
 matrix = [
